@@ -1,0 +1,70 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+main{
+    background-image: url('office.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 40%;
+    background-position: top;
+    margin-bottom: 50px;
+}
+header{
+    height: 90px;
+    margin: 0px;
+    background-color: white;
+    text-align:center;
+}
+    h1{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+    p{
+        font-family: Arial, Helvetica, sans-serif;}
+
+footer{
+    height: 45px;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    background-color: rgba(46, 45, 45, 0.911);
+    position: relative;
+}
+a{
+    color: rgb(5, 149, 185);
+}
+.last{
+    margin-top: 30px;
+    text-align: center;
+ }
+ button{
+    border-radius: 25px;
+    background: rgb(12, 48, 116);
+    color: white;
+    width: 180px;
+    height: 40px;
+    padding: 5px;
+ }
+
+ .parallel{
+    display:flex;
+    margin-left: 170px;
+    
+}
+.mirr{
+    background-color: white;
+    height: max-content;
+    width: 450px;
+    padding: 15px;
+
+    margin-top: 35px;
+    margin-right: 35px;
+    box-shadow: 0 4px 3px -2px rgba(0, 0, 0, 0.3);
+}
+.mirr p{
+    font-size: 14px;
+    font-family:Arial, Helvetica, sans-serif;
+    line-height: 26px;
+}
+.mirr .year{
+    font-size: 21px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}

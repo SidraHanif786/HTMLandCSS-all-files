@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+</head>
+<body>
+    <img src="https://talibilm.pk/wp-content/uploads/2019/09/College.jpg" alt="College Logo" style="height:100px; width:120px;">
+    <img src="admission.jpeg" alt="Admissions" style="height:200px; width:450px ; float: right;">
+    <h1>COLLEGE ADMISSIONS FORM</h1>
+    <h4>Enter your admission information below</h4>
+    <hr><br>
+
+    <form onsubmit autocomplete="on">
+        <fieldset>
+            <legend>Personalia:</legend>
+            <label for="name">Full Name:</label>
+            <input type="text" placeholder="Enter your full name" required>
+            <br><br>
+            <label for="birth">Birth Date:</label>
+            <input type="date" id="date" name="birth" required>
+        <br><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Contact:</legend>
+            <label for="email">Email-address:</label>
+            <input type="email" name="email" id="email" placeholder="ex: myname@example.com" required>
+            <br><br>
+            <label for="phone">Phone number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="ex: 0300-0000000" pattern="[0-9]{4}-[0-9]{7}" required>
+            <br><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend></legend>
+            <label for=""></label>
+            <label for="gender">Gender:</label>
+            <input type="radio" id="gender-male" name="gender" value="male" required>
+            <label for="gender-male">Male</label>
+            <input type="radio" id="gender-female" name="gender" value="female" required>
+            <label for="gender-female">Female</label>
+            <br><br>
+            <label for="age">Age:</label>
+            <input type="number" placeholder="ex: 18" id="age" name="age" min="15" max="40" required>
+            <br><br>
+        
+        <label for="city">City:</label>
+        <select name="city" id="city" required>
+            <option value="">Select your city</option>
+            <option value="lahore">Lahore</option>
+            <option value="karachi">Karachi</option>
+            <option value="islamabad">Islamabad</option>
+            <option value="rawalpindi">Rawalpindi</option>
+            <option value="faisalabad">Faisalabad</option>
+            <option value="peshawar">Peshawar</option>
+            <option value="multan">Multan</option>
+            <option value="hyderabad">Hyderabad</option>
+            <option value="quetta">Quetta</option>
+            <option value="sialkot">Sialkot</option>
+        </select>
+        <br><br>
+        </fieldset>
+        <br>
+        <label for="interests">Career Interests:</label>
+        <br><br>
+        <input type="checkbox" id="interests-ai" name="interests[]" value="artificial_intelligence">
+        <label for="interests-ai">Artificial Intelligence / Machine Learning</label>
+        <br>
+        <input type="checkbox" id="interests-cs" name="interests[]" value="computer_science">
+        <label for="interests-cs">Computer Science / Software Engineering</label>
+        <br>
+        <input type="checkbox" id="interests-engr" name="interests[]" value="engineering">
+        <label for="interests-de">Engineering</label>
+        <br>
+        <input type="checkbox" id="interests-mba" name="interests[]" value="mba">
+        <label for="interests-mba">MBA</label>
+        <br>
+        <input type="checkbox" id="interests-cybersecurity" name="interests[]" value="cybersecurity">
+        <label for="interests-cybersecurity">Cybersecurity</label>
+        <br><br>
+
+        <label for="picture">Picture (JPEG or PNG):</label>
+        <input type="file" id="picture" name="picture" accept="image/jpeg,png" required>
+        <br><br>
+        <label for="m-c">Matric Certificate (pdf)</label>
+        <input type="file" id="m-c" name="m-c" accept="application/pdf">
+        <br><br>
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" placeholder="You can enter your comments here" style="width:250px; height:25px;" ></textarea>
+        <br><br>
+        <button type="submit" onclick="alert('message')">Submit</button>
+        <button type="reset">Reset</button>
+        <br>
+        <hr>
+        <br>
+    </form>
+
+</body>
+</html>

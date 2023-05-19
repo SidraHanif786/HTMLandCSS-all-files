@@ -1,0 +1,207 @@
+body{
+    margin: 0px;
+    color: white;
+}
+.boundary{
+    position: relative;
+    background-color: rgb(123,106,218);
+    border-radius: 0px 0px 90px 0px;
+    height: 92vh;
+    padding: 2%; }
+nav {
+    display: flex;
+    height: 50px;
+    width: 100%;
+}
+label.logo {
+    font-size: 38px;
+    font-family: sans-serif;
+}
+
+.links {
+    margin-left: auto;
+}
+.links ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.links ul li {
+    background-color: rgb(148, 132, 235);
+    border-radius: 22px;
+    color: #f2f2f2;
+    text-decoration: none;
+    margin-right: 12px;
+    padding: 9px 12px;
+    text-align: center;
+}
+.links ul li a{
+    color: #f2f2f2;
+    text-decoration: none;
+}
+.links ul li:hover {
+    background-color: rgb(168, 155, 243);
+}
+
+
+.search {
+    background-color: rgb(148, 132, 235);
+    border: none;
+    border-radius: 22px;
+    color: white;
+    padding: 8px 4px;
+}
+.search::placeholder {
+    color: white;
+    opacity: 0.8;
+}
+
+
+.mid{
+    position: absolute;
+    background-image: url('work.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 15px;
+    width: 70%;
+    height: 65%;
+    top: 24%;
+    margin-left: 20%;
+}
+
+.content{
+    color: white;
+    width: 50%;
+    height: 300px;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+}
+h2{ font-size: 30px;}
+button{
+    background-color: rgb(148, 132, 235);
+    border: rgb(148, 132, 235);
+    color: #f2f2f2;
+    padding: 9px 12px;
+    text-align: center;
+    border-radius: 22px;
+}
+.white{
+    color: rgb(117, 100, 216);
+    background-color: white;
+    padding: 9px 12px;
+    text-align: center;
+    border-radius: 22px;
+
+}
+button:hover{
+    background-color: rgb(186, 175, 247);
+}
+
+.circle{
+  position: fixed;
+  width: 25%;
+  height: 300px;
+  top:30%;
+  border-radius: 50%;
+  margin-left: -80px;
+  border: #b2b4b69f solid;
+}
+
+.mini-circle{
+  position: fixed;
+  width: 17%;
+  height: 200px;
+  top:38%;
+  border-radius: 50%;
+  margin-left: -50px;
+  border: #d8dfe79f solid;
+}
+.upper-circle{
+  position: fixed;
+  width: 22%;
+  height: 300px;
+  top:0;
+  right: 200px;
+  border-radius: 50%;
+  border: #b2b4b69f solid;
+  opacity: 50%;
+}
+.up-mini-circle{
+  position: fixed;
+  width: 15%;
+  height: 200px;
+  top:48px;
+  right: 240px;
+  border-radius: 50%;
+  border: #dadddf9f solid;
+  opacity: 50%;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: left;
+    line-height: 40px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  #check{
+    display: none;
+  }
+ 
+  
+  @media screen and (max-width: 970px){
+    .checkbtn{
+      display: block;
+    }
+    .content{
+        width: 90%;
+        top: 2%;
+    }
+  
+    nav ul{
+      display: none;
+      position: absolute;
+      top: 80px;
+      left: 0;
+      width: 150px;
+      flex-direction: column;
+      background-color: #6c8297;
+
+    }
+  
+    nav ul li{
+      margin: 2px 0;
+    }
+    label.logo{
+      font-size: 30px;
+      padding-left: 50px;
+    }
+    .circle{
+      width: 30%;
+      height: 44%;
+      margin-left: -70px;
+    }
+    .mini-circle{
+      width: 20%;
+      height: 30%;
+      margin-left: -40px;
+    }
+    .up-mini-circle{
+      width: 15%;
+      height: 160px;
+      top:52px;
+      right: 240px;
+    }
+    .upper-circle{
+      width: 26%;
+      height: 230px;
+    }
+  }
+
+  
